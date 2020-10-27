@@ -9,9 +9,7 @@ function App() {
       <header className="header">
         <Header />
       </header>
-      <div>
-        <ImageList />
-      </div>
+      <div className="main-div"><ImageList /></div>
     </div>
   );
 }

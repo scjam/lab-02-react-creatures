@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ImageItem from './ImageItem.js';
 import images from './data.js';
 
+
 export default class ImageList extends Component {
     render() {
         return (
@@ -9,7 +10,8 @@ export default class ImageList extends Component {
                 {
                     images.map(image =>
                         <ImageItem 
-                        caption={image.title}
+                        picture={image.url}
+                        title={image.title}
                         />)
                 }
             </div>
