@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+  align-items: center;
+}
+
+.header {
+  background-color: peachpuff;
+  width: auto;
+  height: 100px;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: rebeccapurple;
+  text-transform: uppercase;
+}
+
+img {
+  width: 320px;
+  min-height: 200px;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 8px;
+  border: 2px solid navy;
+}
