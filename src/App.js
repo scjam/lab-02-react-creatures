@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Header from './Header.js';
-import ImageList from './ImageList.js'
 import FilterList from './FilterList.js'
 import images from './data.js';
 

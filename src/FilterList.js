@@ -7,15 +7,15 @@ export default class FilterList extends React.Component {
         horns: '',
     }
 
-    handleChange = e => {
-        this.setState({
-            filter: e.target.value
-        });
-    }
-
     handleChangeHorns = e => {
         this.setState({
             horns: e.target.value
+        });
+    }
+
+    handleChange = e => {
+        this.setState({
+            filter: e.target.value
         });
     }
 
@@ -23,14 +23,7 @@ export default class FilterList extends React.Component {
         return (
             <>
             <div className="drop-down">
-                <select onChange={this.handleChangeHorns}>
-                    <option value=''>How Many Horns:</option>
-                    <option value='1'>1</option>
-                    <option value='2'>2</option>
-                    <option value='3'>3</option>
-                    <option value='100'>100</option>
-                </select>
-                <select onChange={this.handleChange}>
+            <select onChange={this.handleChange}>
                     <option value=''>What Type:</option>
                     <option value='narwhal'>narwhal</option>
                     <option value='rhino'>rhino</option>
@@ -44,6 +37,13 @@ export default class FilterList extends React.Component {
                     <option value='unilego'>lizard</option>
                     <option value='unilego'>dragon</option>
                 </select>
+                <select onChange={this.handleChangeHorns}>
+                    <option value=''>How Many Horns:</option>
+                    <option value='1'>1</option>
+                    <option value='2'>2</option>
+                    <option value='3'>3</option>
+                    <option value='100'>100</option>
+                </select>
             </div>
             <div className="images">
                 {
@@ -54,7 +54,7 @@ export default class FilterList extends React.Component {
                     })
             
                     .filter((image) => {
-                        if (!this.state.type) return true;
+                        if (!this.state.horns) return true;
                         if (image.horns === +this.state.horns) return true;
                         return false
                     })
