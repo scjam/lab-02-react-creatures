@@ -12,6 +12,9 @@ export default class ImageList extends Component {
                         <ImageItem 
                         picture={image.url}
                         title={image.title}
+                        description={image.description}
+                        type={image.keyword}
+                        horns={image.horns}
                         />)
                 }
             </div>

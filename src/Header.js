@@ -4,7 +4,7 @@ export default class Header extends React.Component {
     render() {
         return (
             <div>
-                I am a header!
+                Mr. Magorium's Horned Creature Emporium
             </div>
         )
     }
